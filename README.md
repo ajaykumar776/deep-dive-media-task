@@ -1,4 +1,4 @@
-# Mini Task Management System
+# Task Management System
 
 ## About This Project
 This is a Mini Task Management System designed to manage tasks efficiently. Users can create, update, and delete tasks, and manage various aspects of their task lists.
