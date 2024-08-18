@@ -110,3 +110,17 @@ The frontend is built with React and provides a user interface for managing task
     ```
 
    The frontend application will run at `http://localhost:3000`.
+
+# snapshots
+Task Management System
+![Home Page](./snapshots/Home.png)
+Login
+![Login Page](snapshots/login.png)
+Dashboard page
+![Dashboard Page](./snapshots/task_dashboard.png)
+Add Task
+![Add Task](./snapshots/Add_task.png)
+Edit Task
+![Edit Task](./snapshots/Task_edit.png)
+Generate Report
+![Edit Task](./snapshots/generate_report.png)
