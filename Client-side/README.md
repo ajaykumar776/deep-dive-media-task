@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Task Management System - Frontend Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Task Dashboard
 
-## Available Scripts
+This documentation provides an overview of the frontend setup and usage for the Task Management System built with React. The application enables users to manage tasks effectively with features such as creating, editing, filtering, and deleting tasks.
 
-In the project directory, you can run:
+## Dependencies
 
-### `npm start`
+- **React**: `^18.2.0`  
+  The core library for building the user interface.
+- **Material-UI**: `^5.10.6`  
+  For UI components and styling.
+- **React Router**: `^6.10.0`  
+  For handling routing and navigation.
+- **Axios**: `^1.2.0`  
+  For making HTTP requests.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Installation
+- Features
+  - Authentication
+  - Task Dashboard
+  - Create Task
+  - Edit Task
+  - Delete Task
+  - Filtering and Pagination
+- Configuration
+- Running the Application
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the Repository**
+    ```bash
+    git clone https://github.com/yourusername/deep-dive-media-task.git
+    ```
 
-### `npm run build`
+2. **Navigate to the Frontend Directory**
+    ```bash
+    cd deep-dive-media-task/frontend
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Install Dependencies**
+    ```bash
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Start the Development Server**
+    ```bash
+    npm start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   The application will be available at `http://localhost:3000`.
 
-### `npm run eject`
+### Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Task Dashboard**: View all tasks with options to add, edit, and delete tasks.
+- **Create Task**: Form for adding new tasks with title, status, and due date.
+- **Edit Task**: Modify existing tasks, including changing status and due date.
+- **Delete Task**: Remove tasks from the list.
+- **Filtering and Pagination**:
+  - Filter tasks by title, status, and due date.
+  - Paginate through tasks to view a subset at a time.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Set Up the API Base URL**
+    - Open `src/api/apiService.js`.
+    - Set the `API_BASE_URL` to point to your backend server:
+      ```js
+      const API_BASE_URL = 'http://localhost:8000/api';
+      ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Running the Application
 
-## Learn More
+1. **Start the Development Server**
+    ```bash
+    npm start
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   The frontend application will run at `http://localhost:3000`.
