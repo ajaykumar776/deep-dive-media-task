@@ -1,0 +1,35 @@
+# backend/.gitignore
+
+# Laravel & PHP
+
+/vendor/
+*.log
+*.cache
+*.phpunit.result.cache
+/.vscode/
+/*.env
+/storage/*.key
+
+# Composer
+/composer.lock
+/composer.phar
+
+# Nginx or Apache
+nginx/
+apache/
+
+# Node modules
+node_modules/
+
+# IDE and Editor Settings
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Laravel specific
+/public/storage
+/storage/*.php
