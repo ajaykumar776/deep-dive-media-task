@@ -29,7 +29,7 @@ class TaskController extends Controller
             $query->whereDate('due_date', $filters['dueDate']);
         }
     
-        $tasks = $query->paginate(10, ['id', 'title', 'description', 'status', 'due_date', 'priority'], 'page', $page);
+        $tasks = $query->orderBy('id','desc')->paginate(10, ['id', 'title', 'description', 'status', 'due_date', 'priority'], 'page', $page);
     
         $formattedTasks = $tasks->map(function($task) {
             return [

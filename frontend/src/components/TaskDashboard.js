@@ -211,7 +211,7 @@ const TaskDashboard = () => {
             page={currentPage}
             onChange={handlePageChange}
             color="primary"
-            style={{ marginTop: '20px' }}
+            style={{ marginTop: '20px',marginBottom:"30px"}}
           />
         </>
       )}

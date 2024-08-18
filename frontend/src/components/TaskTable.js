@@ -11,13 +11,28 @@ const TaskTable = ({ tasks = [], onEdit, onDelete }) => {
       { Header: 'Description', accessor: 'description' },
       { Header: 'Status', accessor: 'status' },
       { Header: 'Due Date', accessor: 'due_date' },
-      { Header: 'Priority', accessor: 'priority' },
-      { Header: 'Actions', Cell: ({ row }) => (
-        <Box sx={{ display: 'flex', gap: 1 }}>
-          <Button variant="contained" color="primary" onClick={() => onEdit(row.original)}>Edit</Button>
-          <Button variant="contained" color="secondary" onClick={() => onDelete(row.original.id)}>Delete</Button>
-        </Box>
-      )}
+      { 
+        Header: 'Priority', 
+        accessor: 'priority',
+        Cell: ({ value }) => {
+          // Map numeric priorities to string values
+          const priorityMap = {
+            3: 'High',
+            2: 'Medium',
+            1: 'Low'
+          };
+          return priorityMap[value] || 'others'; // Default to 'Unknown' if the value is not recognized
+        }
+      },
+      { 
+        Header: 'Actions', 
+        Cell: ({ row }) => (
+          <Box sx={{ display: 'flex', gap: 1 }}>
+            <Button variant="contained" color="primary" onClick={() => onEdit(row.original)}>Edit</Button>
+            <Button variant="contained" color="secondary" onClick={() => onDelete(row.original.id)}>Delete</Button>
+          </Box>
+        ) 
+      }
     ],
     [onEdit, onDelete]
   );
