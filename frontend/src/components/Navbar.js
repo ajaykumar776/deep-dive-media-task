@@ -18,7 +18,7 @@ const Navbar = () => {
     <AppBar position="static">
       <Toolbar>
         <Container maxWidth="lg" sx={{ display: 'flex', justifyContent: 'space-between' }}>
-          <Typography variant="h6" component="div">
+        <Typography variant="h6" component={Link} to="/home" sx={{ textDecoration: 'none', color: 'inherit' }}>
             Task Management
           </Typography>
           <div>
@@ -26,6 +26,9 @@ const Navbar = () => {
               <>
                 <Button color="inherit" component={Link} to="/tasks" sx={{ marginLeft: 2 }}>
                   Tasks
+                </Button>
+                <Button color="inherit" component={Link} to="/report" sx={{ marginLeft: 2 }}>
+                  Task Report
                 </Button>
                 <Button color="inherit" onClick={handleLogout} sx={{ marginLeft: 2 }}>
                   Logout
@@ -35,6 +38,9 @@ const Navbar = () => {
               <>
                 <Button color="inherit" component={Link} to="/login" sx={{ marginLeft: 2 }}>
                   Login
+                </Button>
+                <Button color="inherit" component={Link} to="/report" sx={{ marginLeft: 2 }}>
+                  Task Report
                 </Button>
                 <Button color="inherit" component={Link} to="/register" sx={{ marginLeft: 2 }}>
                   Register

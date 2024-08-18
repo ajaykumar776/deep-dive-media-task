@@ -3,9 +3,10 @@ import TaskDashboard from '../components/TaskDashboard'; // Import your TaskDash
 
 const Tasks = () => {
   return (
-    <div>
-      <TaskDashboard />
-    </div>
+    <div style={{ marginTop: "20px" }}>
+    <TaskDashboard />
+  </div>
+  
   );
 };
 

@@ -27,7 +27,7 @@ const Register = () => {
   };
 
   return (
-    <Container maxWidth="xs">
+    <Container maxWidth="xs" style={{ marginTop: "100px" }}>
       <Typography variant="h4" gutterBottom>
         Register
       </Typography>
